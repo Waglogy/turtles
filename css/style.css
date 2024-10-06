@@ -1,8 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
 body {
-    font-family: "Raleway", sans-serif;
+    font-family: "Lobster", sans-serif;
     color: #0c0c0c;
     background-color: #ffffff;
 }
+
+.small-text {
+    text-align: justify;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+
 .pacifico-regular {
     font-family: "Pacifico", cursive;
     font-weight: 400;

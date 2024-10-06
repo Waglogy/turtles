@@ -1,0 +1,12 @@
+/* font-family: "Montserrat", sans-serif; */
+/* font-family: "Lobster", sans-serif; */
+
+.about-big-text {
+    font-family: "Lobster", sans-serif;
+}
+
+.about-text {
+    text-align: justify;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
