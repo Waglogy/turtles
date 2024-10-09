@@ -740,7 +740,7 @@ a:focus {
 }
 
 .info_section {
-    background-color: #363636;
+    background-color: #025154;
     color: #ffffff;
     font-family: "Poppins", sans-serif;
 }
@@ -867,7 +867,7 @@ a:focus {
 
 /* footer section*/
 .footer_section {
-    background-color: #363636;
+    background-color: #025154;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -938,3 +938,5 @@ a:focus {
     width: 30px;
     height: 30px;
 }
+
+
