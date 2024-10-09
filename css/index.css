@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.l-realise-slider-card-block {
+    position: relative;
+    top: 0px;
+    right: 22px;
+    display: inline-block;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-perspective: 800px;
+    perspective: 800px;
+  }
+  
+  
+  .card {
+    position: absolute;
+    display: block;
+    width: 390px;
+    height: 247px;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+    border-radius: 4px;
+  }
+  
+  .card-block-wrap {
+    position: absolute;
+    top: 0px;
+    left: 100px;
+    width: 500px;
+    height: 289px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+  
+  .a {
+    -webkit-transform: translate3d(70px, -80px, -50px);
+    transform: translate3d(70px, -80px, -50px);
+    opacity: .6;
+  }
+  
+  .b {
+    -webkit-transform: translate3d(110px, 80px, -60px);
+    transform: translate3d(110px, 80px, -60px);
+    opacity: .1;
+  }
+  
+  .c {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    transform: translate3d(0px, 0px, 0px);
+    opacity: 1;
+    box-shadow: 0 20px 50px rgba(0, 34, 45, 0.5);
+  }
+  
+  #first {
+    background-color: blue;
+  }
+  
+  #second {
+    background-color: green;
+  }
+  
+  #third {
+    background-color: red;
+  }
+  
+  .btn-wrap {
+    position: absolute;
+    z-index: 20;
+    bottom: -5px;
+    left: 385px;
+  }
+  
+  .btn {
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 10px;
+    height: 10px;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    opacity: .5;
+    border-radius: 50%;
+    background-color: #cbcbcb;
+  }
+  
+  .focus {
+    width: 15px;
+    height: 15px;
+    -webkit-transform: translate(-3px, -3px);
+    transform: translate(-3px, -3px);
+    opacity: 1;
+    background-color: #5924c3;
+  }
+  
+  #one {
+    left: 0;
+  }
+  
+  #two {
+    left: 25px;
+  }
+  
+  #three {
+    left: 50px;
+  }
