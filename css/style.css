@@ -6,6 +6,53 @@ body {
     background-color: #ffffff;
 }
 
+.upcoming-events-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 90vh;
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+}
+
+.heading_container {
+    margin-bottom: 6rem;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border-radius: 10px;
+    padding: 10px;
+    bottom: 100px; /* Adjust this value if you want the caption higher/lower */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+}
+
+@media only screen and (max-width: 600px) {
+    .upcoming-events-carousel {
+        height: 30vh;
+        margin-top: 1rem;
+        margin-bottom: 4rem;
+    }
+    .heading_container {
+        margin-bottom: 1rem;
+    }
+    .carousel-caption {
+        bottom: 0; /* Adjust this value if you want the caption higher/lower */
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .upcoming-events-carousel {
+        height: auto;
+    }
+    .carousel-caption {
+        bottom: 0; /* Adjust this value if you want the caption higher/lower */
+    }
+}
+
 .small-text {
     text-align: justify;
     font-family: "Montserrat", sans-serif;
