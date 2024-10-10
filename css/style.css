@@ -330,8 +330,8 @@ a:focus {
 
 .slider_section .carousel_btn-container .carousel-control-prev:hover,
 .slider_section .carousel_btn-container .carousel-control-next:hover {
-    background-color: #ac9784;
-}
+    background-color: #025154;
+}   
 
 .slider_section .carousel_btn-container .carousel-control-prev {
     background-image: url(../images/prev.png);
@@ -985,5 +985,3 @@ a:focus {
     width: 30px;
     height: 30px;
 }
-
-
