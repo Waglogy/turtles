@@ -7,7 +7,7 @@ async function getCarouselItems() {
 
         const data = await response.json()
 
-        console.log(data)
+        // console.log(data)
 
         data.data.forEach((element, index) => {
             // console.log(element.title)
@@ -34,9 +34,14 @@ async function getCarouselItems() {
                 />
                 <!-- Event Info Overlay -->
                 <div class="carousel-caption">
-                    <h5>${element.upcoming_date}</h5>
+                    <h5>${new Date(
+                        element.upcoming_date.toString()
+                    ).toDateString()}</h5>
                     <p>${element.title}</p>
-                    <p>${element.content}</p>
+                    <p style="font-family: "Montserrat", sans-serif;
+                    font-weight: 500;">
+                            ${element.content}
+                    </p>
                 </div>
             
             `
