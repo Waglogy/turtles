@@ -1,11 +1,27 @@
+function showLoader(status) {
+    const eventLoader = document.getElementById("events-loader")
+    if (status) {
+        eventLoader.style.display = "block"
+        eventLoader.classList.add("active")
+    } else {
+        eventLoader.style.display = "none"
+        eventLoader.classList.remove("active")
+        eventLoader.remove()
+    }
+}
+
 async function getCarouselItems() {
     const carouselContainer = document.querySelector(".carousel-inner-event")
     try {
+        showLoader(true)
+
         const response = await fetch(
             "https://turtle-backend.onrender.com/all-posts"
         )
 
         const data = await response.json()
+
+        showLoader(false)
 
         // console.log(data)
 

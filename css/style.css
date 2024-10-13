@@ -20,6 +20,16 @@ body {
     margin-bottom: 6rem;
 }
 
+#loading-text {
+    /* position: absolute; */
+    text-align: center;
+    padding: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #e91e63;
+    font-family: "Montserrat", sans-serif;
+}
+
 .carousel-caption {
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
     border-radius: 10px;
@@ -331,7 +341,7 @@ a:focus {
 .slider_section .carousel_btn-container .carousel-control-prev:hover,
 .slider_section .carousel_btn-container .carousel-control-next:hover {
     background-color: #025154;
-}   
+}
 
 .slider_section .carousel_btn-container .carousel-control-prev {
     background-image: url(../images/prev.png);
