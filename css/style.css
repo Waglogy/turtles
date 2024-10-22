@@ -995,3 +995,10 @@ a:focus {
     width: 30px;
     height: 30px;
 }
+
+
+/* Image Gallery */
+.images_src img{
+    width: 30vw;
+    aspect-ratio: 3/4;
+}
