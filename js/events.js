@@ -37,30 +37,51 @@ async function getCarouselItems() {
             }
 
             carouselItem.innerHTML = `
-                <img
-                    class="d-block"
-                    src="${element.image[0]}"
-                    alt="First slide"
-                    style="
-                        height: 100%;
-                        width: 100%;
-                        object-fit: cover;
-                        border-radius: 15px;
-                    "
-                />
-                <!-- Event Info Overlay -->
-                <div class="carousel-caption">
-                    <h5>${new Date(
-                        element.upcoming_date.toString()
-                    ).toDateString()}</h5>
-                    <p>${element.title}</p>
-                    <p style="font-family: "Montserrat", sans-serif;
-                    font-weight: 500;">
-                            ${element.content}
-                    </p>
-                </div>
+    ${
+        element.isFile
+            ? `
+        <img
+            class="d-block"
+            src="${element.image}"
+            alt="First slide"
+            style="
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                border-radius: 15px;
+            "
+        />
+    `
+            : `
+        <iframe
+            class="d-block"
             
-            `
+            src="https://www.youtube.com/embed/${
+                element.yt_link.split("v=")[1]
+            }"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            style="
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                border-radius: 15px;
+            "
+        ></iframe>
+    `
+    }
+    <!-- Event Info Overlay -->
+    <div class="carousel-caption">
+        <h5>${new Date(element.upcoming_date.toString()).toDateString()}</h5>
+        <p>${element.title}</p>
+        <p style="font-family: 'Montserrat', sans-serif; font-weight: 500;">
+            ${element.content}
+        </p>
+    </div>
+`
+
             carouselContainer.appendChild(carouselItem)
         })
     } catch (error) {
